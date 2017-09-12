@@ -273,10 +273,10 @@ public class GUI extends javax.swing.JFrame {
                 updateLog("\nGetting IP address...");
                 if (GetPageSource(checkipPageSource)== true) {
                     ParsePageSource(urlResponse,ipRegex);
-                    updateLog("\n" + parseResult);
+                    updateLog("\n" + parseResult + "\n");
                 }
                 else {
-                    updateLog("\n" + urlResponse);
+                    updateLog("\n" + urlResponse + "\n");
                 }
                 jButtonCheckIP.setEnabled(true);
             }
